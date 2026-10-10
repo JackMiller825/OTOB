@@ -7,8 +7,8 @@ export const token = {
   buySellTax: "0%",
   liquidityStatus: "Burn",
   ownershipStatus: "Renounce",
-  officialXUrl: "", // [OFFICIAL_X_URL]
-  officialTelegramUrl: "", // [OFFICIAL_TELEGRAM_URL]
+  officialXUrl: "https://x.com/otob_eth",
+  officialTelegramUrl: "https://t.me/otob_eth",
   swapUrl: "", // [SWAP_URL]
   chartUrl: "", // [CHART_URL]
   etherscanUrl: "", // [ETHERSCAN_URL]
