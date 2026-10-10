@@ -1,5 +1,6 @@
 import { useEffect, useRef, type RefObject } from "react";
 import { navLinks } from "../config/navigation";
+import { SocialIcons } from "./SocialIcons";
 
 type MobileNavProps = {
   open: boolean;
@@ -95,6 +96,7 @@ export function MobileNav({ open, activeId, onClose, menuButtonRef }: MobileNavP
           <a className="btn btn--primary drawer-cta" href="#story" onClick={onClose}>
             Meet the committee
           </a>
+          <SocialIcons className="drawer-social" />
         </nav>
       </div>
     </div>

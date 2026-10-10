@@ -1,7 +1,6 @@
-import type { ReactNode } from "react";
 import { assets } from "../config/assets";
-import { TelegramIcon, XIcon } from "../components/Icons";
 import { SectionHeading } from "../components/SectionHeading";
+import { SocialIcons } from "../components/SocialIcons";
 import { externalLinks } from "../config/token";
 
 const activities = [
@@ -28,33 +27,6 @@ const activities = [
   },
 ];
 
-function CommunityAction({
-  href,
-  label,
-  icon,
-}: {
-  href: string | null;
-  label: string;
-  icon: ReactNode;
-}) {
-  if (href) {
-    return (
-      <a className="btn btn--secondary community-btn" href={href} target="_blank" rel="noopener noreferrer">
-        {icon}
-        {label}
-        <span className="sr-only"> (opens in a new tab)</span>
-      </a>
-    );
-  }
-  return (
-    <span className="community-btn community-btn--pending">
-      {icon}
-      <span>{label}</span>
-      <span className="pending-link__state">Pending</span>
-    </span>
-  );
-}
-
 export function CommunitySection() {
   const linksReady = Boolean(externalLinks.telegram || externalLinks.x);
 
@@ -68,10 +40,7 @@ export function CommunitySection() {
             titleId="community-title"
             intro="Share the overthinking. Laugh at the impulse. Make the next reaction image with us."
           />
-          <div className="community-actions">
-            <CommunityAction href={externalLinks.telegram} label="Join Telegram" icon={<TelegramIcon />} />
-            <CommunityAction href={externalLinks.x} label="Follow on X" icon={<XIcon />} />
-          </div>
+          <SocialIcons className="community-actions" />
           {!linksReady ? <p className="community-pending">Official community links will be added here.</p> : null}
           <div className="activity-grid">
             {activities.map((activity) => (

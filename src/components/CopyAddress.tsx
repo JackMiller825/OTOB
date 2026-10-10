@@ -13,14 +13,13 @@ function copyWithSelection(text: string): boolean {
   area.focus();
   area.select();
   area.setSelectionRange(0, text.length);
-  let copied = false;
   try {
-    copied = document.execCommand("copy");
+    return document.execCommand("copy");
   } catch {
-    copied = false;
+    return false;
+  } finally {
+    area.remove();
   }
-  area.remove();
-  return copied;
 }
 
 async function writeText(text: string): Promise<boolean> {

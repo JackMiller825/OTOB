@@ -3,6 +3,7 @@ import { assets } from "../config/assets";
 import { navLinks } from "../config/navigation";
 import { Button } from "./Button";
 import { MobileNav } from "./MobileNav";
+import { SocialIcons } from "./SocialIcons";
 
 type SiteHeaderProps = {
   activeId: string;
@@ -43,19 +44,22 @@ export function SiteHeader({ activeId, menuOpen, onMenuOpenChange }: SiteHeaderP
               </a>
             ))}
           </nav>
-          <Button href="#story" className="header-cta">
-            Meet the committee
-          </Button>
-          <button
-            ref={menuButtonRef}
-            className="menu-toggle"
-            type="button"
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            onClick={() => onMenuOpenChange(!menuOpen)}
-          >
-            {menuOpen ? "Close menu" : "Menu"}
-          </button>
+          <div className="header-tools">
+            <SocialIcons />
+            <Button href="#story" className="header-cta">
+              Meet the committee
+            </Button>
+            <button
+              ref={menuButtonRef}
+              className="menu-toggle"
+              type="button"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              onClick={() => onMenuOpenChange(!menuOpen)}
+            >
+              {menuOpen ? "Close menu" : "Menu"}
+            </button>
+          </div>
         </div>
       </header>
       <MobileNav
