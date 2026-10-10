@@ -36,12 +36,14 @@ async function writeText(text: string): Promise<boolean> {
 
 export function CopyAddress() {
   const addressRef = useRef<HTMLParagraphElement>(null);
-  const [copyState, setCopyState] = useState<"idle" | "success" | "error">("idle");
+  const [copied, setCopied] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   async function copyAddress() {
-    const copied = await writeText(contractDisplay);
-    if (copied) {
-      setCopyState("success");
+    const ok = await writeText(contractDisplay);
+    if (ok) {
+      setCopied(true);
+      setFailed(false);
       return;
     }
 
@@ -53,27 +55,22 @@ export function CopyAddress() {
       selection?.removeAllRanges();
       selection?.addRange(range);
     }
-    setCopyState("error");
+    setFailed(true);
   }
-
-  const copyMessage =
-    copyState === "success"
-      ? "Address copied"
-      : copyState === "error"
-        ? "Could not copy. Select the address to copy it."
-        : "";
 
   return (
     <div className="address-line">
       <p className="address-line__value" ref={addressRef} translate="no">
         {contractDisplay}
       </p>
-      <button type="button" className="btn btn--secondary" onClick={() => void copyAddress()}>
-        Copy address
+      <button type="button" className="btn btn--secondary" aria-live="polite" onClick={() => void copyAddress()}>
+        {copied ? "Copied" : "Copy address"}
       </button>
-      <p className={`copy-status copy-status--${copyState}`} role="status" aria-live="polite">
-        {copyMessage}
-      </p>
+      {failed ? (
+        <p className="copy-status" role="status">
+          Could not copy. Select the address to copy it.
+        </p>
+      ) : null}
     </div>
   );
 }
