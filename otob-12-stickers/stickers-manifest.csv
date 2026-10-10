@@ -1,0 +1,13 @@
+number,emotion,master_path,master_dimensions,master_format,master_transparency,chat_path,chat_dimensions,chat_format,chat_transparency
+1,happy,masters-1024/001-otob-happy.png,1024x1024,PNG,Yes,chat-512/001-otob-happy.png,512x512,PNG,Yes
+2,laughing,masters-1024/002-otob-laughing.png,1024x1024,PNG,Yes,chat-512/002-otob-laughing.png,512x512,PNG,Yes
+3,excited,masters-1024/003-otob-excited.png,1024x1024,PNG,Yes,chat-512/003-otob-excited.png,512x512,PNG,Yes
+4,sad,masters-1024/004-otob-sad.png,1024x1024,PNG,Yes,chat-512/004-otob-sad.png,512x512,PNG,Yes
+5,angry,masters-1024/005-otob-angry.png,1024x1024,PNG,Yes,chat-512/005-otob-angry.png,512x512,PNG,Yes
+6,scared,masters-1024/006-otob-scared.png,1024x1024,PNG,Yes,chat-512/006-otob-scared.png,512x512,PNG,Yes
+7,shocked,masters-1024/007-otob-shocked.png,1024x1024,PNG,Yes,chat-512/007-otob-shocked.png,512x512,PNG,Yes
+8,confused,masters-1024/008-otob-confused.png,1024x1024,PNG,Yes,chat-512/008-otob-confused.png,512x512,PNG,Yes
+9,smug,masters-1024/009-otob-smug.png,1024x1024,PNG,Yes,chat-512/009-otob-smug.png,512x512,PNG,Yes
+10,embarrassed,masters-1024/010-otob-embarrassed.png,1024x1024,PNG,Yes,chat-512/010-otob-embarrassed.png,512x512,PNG,Yes
+11,loving,masters-1024/011-otob-loving.png,1024x1024,PNG,Yes,chat-512/011-otob-loving.png,512x512,PNG,Yes
+12,tired,masters-1024/012-otob-tired.png,1024x1024,PNG,Yes,chat-512/012-otob-tired.png,512x512,PNG,Yes

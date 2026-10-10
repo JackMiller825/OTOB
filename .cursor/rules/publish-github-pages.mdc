@@ -1,0 +1,15 @@
+---
+description: Push codebase updates to GitHub and publish GitHub Pages
+alwaysApply: true
+---
+
+# Publish updates
+
+After changing this codebase, commit on `main` and push to `https://github.com/JackMiller825/OTOB.git`.
+
+GitHub Actions (`.github/workflows/pages.yml`) builds the site and publishes `dist` to GitHub Pages on every push to `main`. The live site is `https://otob.site/`.
+
+- Keep `public/CNAME` as `otob.site` so deploys keep the custom domain.
+- Keep the Vite base at `/`. Public files use `import.meta.env.BASE_URL` or `%BASE_URL%`.
+- Do not force-push, skip hooks, or change git config.
+- Do not commit secrets, `node_modules`, or `dist`.

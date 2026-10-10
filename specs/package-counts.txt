@@ -1,0 +1,3 @@
+PNG image files: 25
+Preview PNGs: 12
+Other production PNGs: 13

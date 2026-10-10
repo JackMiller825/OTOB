@@ -1,0 +1,14 @@
+Name: Overthink Overbuy
+Ticker: $OTOB
+Network direction: Ethereum (confirm intended deployment chain before publishing)
+
+Narrative summary:
+OTOB is a fictional parody meme-token concept about a trader caught between two inner voices: a research-minded professor who always wants one more chart, and a rocket-suited daredevil who wants to click buy immediately. The tired trader sits between them. The name “Overthink Overbuy” is the joke: research endlessly, then buy impulsively.
+
+Visual identity:
+Cream, lavender, coral, butter yellow, and dark ink; bold cartoon outlines; the approved exhausted trader, professor, and rocket daredevil. Hook: “Two voices. One wallet.”
+
+Facts not yet confirmed:
+Contract address, total supply/tokenomics, taxes, liquidity status, ownership status, trading/chart/explorer URLs, official social links, legal details.
+
+This is parody branding. No endorsement or affiliation with Vitalik Buterin, Elon Musk, Ethereum Foundation, or any related company or organization is claimed. No return, market performance, adoption, or audience-size outcome is promised.

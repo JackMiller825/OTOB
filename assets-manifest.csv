@@ -1,0 +1,36 @@
+relative_path,category,purpose,page_or_section,dimensions_px,format,transparency,approval_or_version_status
+README.md,Documentation,Package contents and Cursor handoff,Package root,,MD,N/A,Written for OTOB
+brand-info.txt,Branding,"Final name, ticker, narrative summary and unconfirmed facts",Package root,,TXT,N/A,Written for OTOB
+branding/otob-logo-transparent.png,Branding,Approved circular logo,Brand identity,1024x1024,PNG,Yes,Approved existing and reused
+content/website-copy.md,Content,Complete website copy,Website pages and sections,,MD,N/A,Written for OTOB
+previews/01-otob-home-overview-desktop.png,Design preview,Front-facing website design mockup,01-otob-home-overview-desktop,836x1881,PNG,No,Generated mockup
+previews/02-otob-home-hero-desktop.png,Design preview,Front-facing website design mockup,02-otob-home-hero-desktop,1536x1024,PNG,No,Generated mockup
+previews/03-otob-home-story-desktop.png,Design preview,Front-facing website design mockup,03-otob-home-story-desktop,1536x1024,PNG,No,Generated mockup
+previews/04-otob-home-token-info-desktop.png,Design preview,Front-facing website design mockup,04-otob-home-token-info-desktop,1536x1024,PNG,No,Generated mockup
+previews/05-otob-home-how-to-buy-desktop.png,Design preview,Front-facing website design mockup,05-otob-home-how-to-buy-desktop,1536x1024,PNG,No,Generated mockup
+previews/06-otob-home-community-desktop.png,Design preview,Front-facing website design mockup,06-otob-home-community-desktop,1536x1024,PNG,No,Generated mockup
+previews/07-otob-home-faq-desktop.png,Design preview,Front-facing website design mockup,07-otob-home-faq-desktop,1536x1024,PNG,No,Generated mockup
+previews/08-otob-home-overview-mobile.png,Design preview,Front-facing website design mockup,08-otob-home-overview-mobile,724x2172,PNG,No,Generated mockup
+previews/09-otob-shared-navigation-footer.png,Design preview,Front-facing website design mockup,09-otob-shared-navigation-footer,1536x1024,PNG,No,Generated mockup
+previews/10-otob-home-hero-mobile.png,Design preview,Front-facing website design mockup,10-otob-home-hero-mobile,1024x1536,PNG,No,Generated mockup
+previews/11-otob-home-story-mobile.png,Design preview,Front-facing website design mockup,11-otob-home-story-mobile,941x1672,PNG,No,Generated mockup
+previews/12-otob-home-how-to-buy-mobile.png,Design preview,Front-facing website design mockup,12-otob-home-how-to-buy-mobile,1024x1536,PNG,No,Generated mockup
+social/otob-social-preview-1200x630.png,Social,OTOB social asset,Social profile or share preview,1200x630,PNG,No,Generated for OTOB; final design approval pending
+social/otob-telegram-banner-1100x520.png,Social,OTOB social asset,Social profile or share preview,1100x520,PNG,No,Approved existing and reused
+social/otob-x-banner-1500x500.png,Social,OTOB social asset,Social profile or share preview,1500x500,PNG,No,Approved existing and reused
+specs/design-guide.md,Specification,"Design, implementation, or package notes",Build handoff,,MD,N/A,Written for OTOB
+specs/package-counts.txt,Specification,"Design, implementation, or package notes",Build handoff,,TXT,N/A,Written for OTOB
+specs/page-and-asset-map.md,Specification,"Design, implementation, or package notes",Build handoff,,MD,N/A,Written for OTOB
+specs/preview-captions.md,Specification,"Design, implementation, or package notes",Build handoff,,MD,N/A,Written for OTOB
+website/apple-touch-icon-180.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,180x180,PNG,Yes,Generated for OTOB; final design approval pending
+website/favicon-32.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,32x32,PNG,Yes,Generated for OTOB; final design approval pending
+website/favicon-64.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,64x64,PNG,Yes,Generated for OTOB; final design approval pending
+website/favicon.svg,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,,SVG,Vector,Generated for OTOB; final design approval pending
+website/interaction-icons.svg,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,,SVG,Vector,Generated for OTOB; final design approval pending
+website/otob-hero-trio.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,1800x1400,PNG,Yes,Generated for OTOB; final design approval pending
+website/otob-story-professor.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,800x1000,PNG,Yes,Generated for OTOB; final design approval pending
+website/otob-story-rocket.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,800x1000,PNG,Yes,Generated for OTOB; final design approval pending
+website/otob-story-trader.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,1000x1000,PNG,Yes,Generated for OTOB; final design approval pending
+website/otob-trader-clicked.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,1000x1000,PNG,Yes,Generated for OTOB; final design approval pending
+website/otob-trader-research.png,Website,"Production illustration, favicon, or SVG icons",Website production artwork or interface,1000x1000,PNG,Yes,Generated for OTOB; final design approval pending
+assets-manifest.csv,Manifest,"Inventory of all deliverables packaged in this ZIP, including this manifest",Package root,N/A,CSV,N/A,Generated and verified
