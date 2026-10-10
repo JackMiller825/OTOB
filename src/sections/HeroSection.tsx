@@ -1,6 +1,7 @@
 import { Button } from "../components/Button";
+import { CopyAddress } from "../components/CopyAddress";
 import { assets } from "../config/assets";
-import { contractAddress, hasContract, token } from "../config/token";
+import { token } from "../config/token";
 
 export function HeroSection() {
   return (
@@ -16,22 +17,20 @@ export function HeroSection() {
             <span className="h1-line h1-line--buy">Overbuy</span>
           </h1>
           <p className="hook">Two voices. One wallet.</p>
-          <p className="hero-body">One says research. One says liftoff. You are caught in the middle.</p>
+          <p className="hero-body">
+            One says research. One says liftoff. You are caught in the middle.
+            <br />
+            Vitalik Buterin vs Elon Musk, Who is right?
+          </p>
           <div className="hero-actions">
             <Button href="#story">Meet the committee</Button>
             <Button href="#token-info" variant="secondary">
-              Read the token facts
+              Tokenomics
             </Button>
           </div>
           <aside className="status-card" aria-label="Contract status">
             <p className="status-card__label">Contract address</p>
-            {hasContract ? (
-              <p className="status-card__value" translate="no">
-                {contractAddress}
-              </p>
-            ) : (
-              <p className="status-card__value">Not announced</p>
-            )}
+            <CopyAddress />
           </aside>
         </div>
         <figure className="hero-stage">

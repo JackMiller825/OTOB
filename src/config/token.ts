@@ -3,10 +3,10 @@ export const token = {
   ticker: "OTOB",
   network: "Ethereum mainnet (confirm before launch)",
   contractAddress: "", // [CONTRACT_ADDRESS]
-  totalSupply: "", // [TOKENOMICS]
-  buySellTax: "", // [BUY_SELL_TAX]
-  liquidityStatus: "", // [LIQUIDITY_STATUS]
-  ownershipStatus: "", // [OWNERSHIP_STATUS]
+  totalSupply: "1,000,000,000",
+  buySellTax: "0%",
+  liquidityStatus: "Burn",
+  ownershipStatus: "Renounce",
   officialXUrl: "", // [OFFICIAL_X_URL]
   officialTelegramUrl: "", // [OFFICIAL_TELEGRAM_URL]
   swapUrl: "", // [SWAP_URL]
@@ -36,6 +36,8 @@ export function configuredHttpUrl(value: string): string | null {
 
 export const contractAddress = token.contractAddress.trim();
 export const hasContract = contractAddress.length > 0;
+export const comingSoon = "Coming Soon..";
+export const contractDisplay = hasContract ? contractAddress : comingSoon;
 
 export const externalLinks = {
   swap: configuredHttpUrl(token.swapUrl),

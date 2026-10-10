@@ -185,10 +185,16 @@ a {
   margin-inline: auto;
 }
 
-.section-heading h2 {
+.section-heading h2,
+.section-title {
   margin: 0;
   font-size: clamp(2rem, 4.4vw, 3.25rem);
   font-weight: 700;
+}
+
+.section-title {
+  margin-bottom: 28px;
+  text-align: center;
 }
 
 .lede {
@@ -398,10 +404,17 @@ a {
 .facts,
 .steps,
 .activity-grid,
-.faq-layout,
-.footer-top {
+.faq-layout {
   display: grid;
   gap: 20px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
 }
 
 .hero-copy {
@@ -442,9 +455,44 @@ a {
 }
 
 .hero-body {
-  max-width: 36ch;
+  max-width: 42ch;
   margin-top: 16px;
   font-size: 1.125rem;
+}
+
+.address-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+@media (max-width: 639px) {
+  .contract-panel__body {
+    display: contents;
+  }
+
+  .contract-panel .address-line {
+    grid-column: 1 / -1;
+    flex-wrap: nowrap;
+  }
+}
+
+.address-line__value {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.address-line .btn {
+  min-height: 44px;
+}
+
+.address-line .copy-status {
+  flex-basis: 100%;
 }
 
 .hero-actions {
@@ -1174,15 +1222,12 @@ a {
   }
 
   .facts {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .info-card {
-    grid-column: span 2;
-  }
-
+  .info-card,
   .info-card:last-child {
-    grid-column: 3 / span 2;
+    grid-column: auto;
   }
 
   .steps,
@@ -1219,7 +1264,6 @@ a {
   }
 
   .footer-top {
-    grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
   }
 

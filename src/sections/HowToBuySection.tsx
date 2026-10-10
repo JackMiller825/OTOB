@@ -1,8 +1,6 @@
 import type { ReactNode } from "react";
-import { Button } from "../components/Button";
 import { EthIcon, SwapIcon, VerifyIcon, WalletIcon } from "../components/Icons";
-import { SectionHeading } from "../components/SectionHeading";
-import { contractAddress, externalLinks, hasContract } from "../config/token";
+import { contractDisplay } from "../config/token";
 
 const steps: { title: string; body: ReactNode; icon: ReactNode; tone: string }[] = [
   {
@@ -19,13 +17,11 @@ const steps: { title: string; body: ReactNode; icon: ReactNode; tone: string }[]
   },
   {
     title: "Verify the contract.",
-    body: hasContract ? (
+    body: (
       <>
         Compare the full address with the official address published here:{" "}
-        <code translate="no">{contractAddress}</code>.
+        <span translate="no">{contractDisplay}</span>.
       </>
-    ) : (
-      <>Compare the full address with the official address published here: Not announced.</>
     ),
     icon: <VerifyIcon />,
     tone: "cream",
@@ -42,12 +38,9 @@ export function HowToBuySection() {
   return (
     <section className="section section--buy" id="how-to-buy" aria-labelledby="buy-title">
       <div className="wrap">
-        <SectionHeading
-          eyebrow="How to buy"
-          title="Research first. Click second."
-          titleId="buy-title"
-          intro="A simple guide to getting ready for $OTOB. Take your time and check every detail."
-        />
+        <h2 className="section-title" id="buy-title">
+          How to buy
+        </h2>
         <ol className="steps">
           {steps.map((step, index) => (
             <li key={step.title} className={`step step--${step.tone}`}>
@@ -60,27 +53,6 @@ export function HowToBuySection() {
             </li>
           ))}
         </ol>
-        <div className="swap-banner">
-          {externalLinks.swap ? (
-            <>
-              <p>Open the verified trading link only after you have checked the contract.</p>
-              <Button href={externalLinks.swap} external>
-                Open verified trading link
-              </Button>
-            </>
-          ) : (
-            <>
-              <p>Trading link available after verification.</p>
-              <button type="button" className="btn btn--disabled" disabled>
-                Open verified trading link
-              </button>
-            </>
-          )}
-        </div>
-        <p className="trust-note">
-          Never share your recovery phrase. This guide is informational; crypto transactions can be
-          irreversible and token prices can fall sharply.
-        </p>
       </div>
     </section>
   );

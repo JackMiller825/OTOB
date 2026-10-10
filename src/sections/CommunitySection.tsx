@@ -85,9 +85,6 @@ export function CommunitySection() {
               </article>
             ))}
           </div>
-          <p className="trust-note">
-            Official moderators will never ask for your recovery phrase or an unsolicited payment.
-          </p>
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@ import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
 import { useActiveSection } from "./hooks/useActiveSection";
 import { CommunitySection } from "./sections/CommunitySection";
-import { FaqSection } from "./sections/FaqSection";
 import { HeroSection } from "./sections/HeroSection";
 import { HowToBuySection } from "./sections/HowToBuySection";
 import { StorySection } from "./sections/StorySection";
@@ -23,7 +22,6 @@ export function App() {
           <TokenSection />
           <HowToBuySection />
           <CommunitySection />
-          <FaqSection />
         </main>
         <SiteFooter />
       </div>

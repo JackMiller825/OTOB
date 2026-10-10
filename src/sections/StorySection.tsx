@@ -61,7 +61,7 @@ export function StorySection() {
               />
             </div>
             <div className="story-card__body">
-              <h3>The Overthinker</h3>
+              <h3>The Overthinker (Vitalik Buterin)</h3>
               <p>Another chart. Another question. Another reason to wait.</p>
               <ul className="traits">
                 <li>Asks the hard questions</li>
@@ -127,7 +127,7 @@ export function StorySection() {
               />
             </div>
             <div className="story-card__body">
-              <h3>The Overbuyer</h3>
+              <h3>The Overbuyer (Elon Musk)</h3>
               <p>Spots a spark. Imagines liftoff. Clicks first.</p>
               <ul className="traits">
                 <li>Follows the excitement</li>
@@ -137,9 +137,6 @@ export function StorySection() {
             </div>
           </article>
         </div>
-        <p className="disclaimer">
-          The characters are fictional parody interpretations. No affiliation or endorsement is implied.
-        </p>
         <div className="preload-art" hidden>
           <img src={assets.traderResearch} alt="" />
           <img src={assets.traderClicked} alt="" />
