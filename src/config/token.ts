@@ -2,7 +2,7 @@ export const token = {
   name: "Overthink Overbuy",
   ticker: "OTOB",
   network: "Ethereum mainnet (confirm before launch)",
-  contractAddress: "", // [CONTRACT_ADDRESS]
+  contractAddress: "0xae12ab49256172453a6ecae9b06a16497f9fbad5",
   totalSupply: "1,000,000,000",
   buySellTax: "0%",
   liquidityStatus: "Burn",
@@ -10,8 +10,8 @@ export const token = {
   officialXUrl: "https://x.com/otob_eth",
   officialTelegramUrl: "https://t.me/otob_eth",
   swapUrl: "", // [SWAP_URL]
-  chartUrl: "", // [CHART_URL]
-  etherscanUrl: "", // [ETHERSCAN_URL]
+  chartUrl: "https://www.dextools.io/app/ether/pair-explorer/0x69245f89ec1a19c32af73c97083db2db33d432d4",
+  etherscanUrl: "https://etherscan.io/token/0xae12ab49256172453a6ecae9b06a16497f9fbad5",
   termsUrl: "", // [TERMS_URL]
   privacyUrl: "", // [PRIVACY_URL]
 } as const;
